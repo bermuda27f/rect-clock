@@ -37,9 +37,6 @@ function tick () {
     Draw.updateHours("active", activeGrid, vars);
     Draw.updateNumbers("#clockCanvas", updateTime);
     Draw.updateInfo("#clockCanvas", updateTime);
-    document.getElementById("timeP").innerHTML = CalcSet.updateTime(time, vars).hours
-        + " : " + CalcSet.updateTime(time, vars).minutes
-        + " : " + CalcSet.updateTime(time, vars).seconds;
 
 }
 
