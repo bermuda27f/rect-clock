@@ -10,7 +10,7 @@ class CalcSet {
     static updateTime(time){
 
         let dayNames =  [
-            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+            "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Sonnabend", "Sonntag"
         ]
 
         return {
