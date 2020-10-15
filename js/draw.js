@@ -34,9 +34,6 @@ class Draw {
             let tmp = [];
             for(let i = 1 ; i < 5; i++){
                 let offsetY = 2 * ((vars.rectSize - vars.offset) + vars.offset);
-                
-                console.log(i, offsetY, offsetY * i);
-
                 tmp.push([{"x" : 0, "y": offsetY * i }, {"x": vars.size, "y" : offsetY * i}]);
             }
             return tmp;
