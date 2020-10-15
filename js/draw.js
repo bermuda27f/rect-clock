@@ -238,7 +238,7 @@ class Draw {
                 .style("text-anchor", "middle")
                 .style("fill", "white")
                 .style("font-size", "15pt")
-                .attr("font-family", "sans-serif");
+                .style("font-family", "sans-serif");
         }
 
     }
