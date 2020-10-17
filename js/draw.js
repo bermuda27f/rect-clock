@@ -64,7 +64,7 @@ class Draw {
         let infoGroup = d3.select(svg_ref)
             .append("g")
                 .attr("id", "infoBox")
-                    .attr("transform", `translate(${vars.svg_width}, ${vars.svg_height - (1.5 * vars.margin.bottom)})`)
+                    .attr("transform", `translate(${vars.svg_width + 20}, ${vars.svg_height - (1.5 * vars.margin.bottom)})`)
         
         const drawDate = (x, id, offset) => {  
             infoGroup
