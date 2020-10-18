@@ -10,7 +10,7 @@ class CalcSet {
     static updateTime(time){
 
         let dayNames =  [
-            "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Sonnabend", "Sonntag"
+            "Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Sonnabend"
         ]
 
         return {
@@ -18,9 +18,9 @@ class CalcSet {
             seconds : time.getSeconds(),
             minutes : time.getMinutes(),
             hours : time.getHours(),
-            day : dayNames[time.getDay() - 1],
+            day : dayNames[time.getDay()],
             date : time.getDate(),
-            month : time.getMonth() + 1,
+            month : time.getMonth() !== 0 ? time.getMonth() + 1 : time.getMonth(),
             year : time.getFullYear(),
             hoursFinished : CalcSet.calcHours_finished(time),
             hoursActive : CalcSet.calcHours_active(time),
