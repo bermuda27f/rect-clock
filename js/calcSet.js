@@ -20,7 +20,7 @@ class CalcSet {
             hours : time.getHours(),
             day : dayNames[time.getDay()],
             date : time.getDate(),
-            month : time.getMonth() !== 0 ? time.getMonth() + 1 : time.getMonth(),
+            month : time.getMonth() + 1,
             year : time.getFullYear(),
             hoursFinished : CalcSet.calcHours_finished(time),
             hoursActive : CalcSet.calcHours_active(time),
